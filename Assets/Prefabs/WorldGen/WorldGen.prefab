@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &950839003512585737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950839003512585743}
+  - component: {fileID: 950839003512585736}
+  m_Layer: 0
+  m_Name: WorldGen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &950839003512585743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950839003512585737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &950839003512585736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950839003512585737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772ab6adba3a876438b9a47ae51d8f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSize: 80
+  ySize: 80
+  mapOffset: {x: 0, y: 0, z: 0}
+  material: {fileID: 2100000, guid: 1d2d4f3bc7e3ce14ab3532e22aaf9878, type: 2}
+  waterMaterial: {fileID: 2100000, guid: 670efced5793a754f8ef786c262b4727, type: 2}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.33962262, g: 0.2579621, b: 0.017621929, a: 1}
+    key1: {r: 0.5754717, g: 0.47738317, b: 0.15472588, a: 1}
+    key2: {r: 0.20000002, g: 0.2901961, b: 0.098039225, a: 1}
+    key3: {r: 0.34509805, g: 0.5921569, b: 0.20392159, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 964
+    ctime1: 7710
+    ctime2: 14418
+    ctime3: 65535
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 4
+    m_NumAlphaKeys: 2
+  stepSize: 4
+  featureSize: 10
+  amplitude: 5
+  distortionFactor: 0.4
+  scaleOfObjects: 0.7
+  maxWaterLevel: -0.5
+  resourceFrequency: 0.09
+  resourceOctaves: 4
+  resourceLacunarity: 2
+  resourceGain: 0.5
+  resourceSpawnChance: 0.5
+  resourceFieldRadiusRange: {x: 0, y: 0}
+  minAmountInResourceField: 4
+  forestRange: {x: 0, y: 0.25}
+  forestPrefabs:
+  - {fileID: 4409609084946639232, guid: 594147f570bff5a4296841ea988f243e, type: 3}
+  - {fileID: 8896576385341061398, guid: 5dbaa1381dc68b74da037cfd359f0011, type: 3}
+  - {fileID: 5331948718035750324, guid: 6d2402f0f76a58441bf3a330629c14fe, type: 3}
+  bambooRange: {x: 0.47, y: 0.54}
+  bambooPrefabs:
+  - {fileID: 2463311266519578185, guid: 0fb05b208061c65459d990b84e5576b0, type: 3}
+  stoneRange: {x: 0.8, y: 1}
+  stonePrefabs:
+  - {fileID: 7823597684496804849, guid: 731694fedcb3b9549891c85602900653, type: 3}
+  onWaterObjects:
+  - {fileID: 158420, guid: 86d10820cadee3d4d868dc6c7f063920, type: 3}
+  - {fileID: 113860, guid: 372b396d424dd694ab562de7a7f9bba2, type: 3}
+  - {fileID: 136830, guid: b0d8a378c3dbe474fb09e04e0114b895, type: 3}
+  - {fileID: 199700, guid: 43179a0b56b254d47bd4dc03a7a91654, type: 3}
+  beneathWaterObjects:
+  - {fileID: 122104, guid: f8624e5be3abfc240a2fe78522a9a0d2, type: 3}
+  - {fileID: 120922, guid: 9b07d3f75bc828a419183410854772fb, type: 3}
+  - {fileID: 166620, guid: 76516cbc5c8406e4786a17be3ba845ed, type: 3}
+  waterObjectDensity: 1
+  landObjects:
+  - {fileID: 113324, guid: 625541a65d7179346a2fac339f4d3f34, type: 3}
+  - {fileID: 100020, guid: e6fad05c4d5f2224aaa5c991267146d3, type: 3}
+  - {fileID: 106148, guid: ec9fba5daf2bc864ab90c7a3e935acae, type: 3}
+  - {fileID: 156776, guid: 5c21d3ac5e1ee174aa93596412fe09bd, type: 3}
+  - {fileID: 100596, guid: cf1e291b54d6c80499a660fa10ec0906, type: 3}
+  landDensity: 0.6
+  useSeed: 0
+  seed: 0

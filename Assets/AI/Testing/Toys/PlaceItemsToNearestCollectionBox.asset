@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8103249678466046191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ff581e8ce7a2d45a2ae2f70a82acb5, type: 3}
+  m_Name: Place all items
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -80
+    y: -136
+    width: 80
+    height: 80
+  collectionPointValue: {fileID: -5742786473336726783}
+  transferToBox: 1
+--- !u!114 &-5742786473336726783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb2ff783dd4b5145a81fa2c56de4438, type: 3}
+  m_Name: Collection Point
+  m_EditorClassIdentifier: 
+--- !u!114 &-1627748672663279635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: Root Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 7368817908393948913}
+  - {fileID: 6670221428599260334}
+  - {fileID: -8103249678466046191}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -168
+    y: -276
+    width: 80
+    height: 80
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffe61478ed6e7b498c9b997879bf192, type: 3}
+  m_Name: PlaceItemsToNearestCollectionBox
+  m_EditorClassIdentifier: 
+  root: {fileID: -1627748672663279635}
+--- !u!114 &6670221428599260334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7667e0d3371274298406731a924bd4, type: 3}
+  m_Name: Goto Collection Point
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -169
+    y: -136
+    width: 80
+    height: 80
+  position: {fileID: -5742786473336726783}
+--- !u!114 &7368817908393948913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037e1ea45ead0d043b19927374e6318f, type: 3}
+  m_Name: Set Collection Point
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -262
+    y: -135
+    width: 80
+    height: 80
+  collectionPoint: {fileID: -5742786473336726783}
+  connectedToCity: 2
+  checkFillAmount: 1
+  maxFillAmount: 0.85
+  minFillAmount: 0

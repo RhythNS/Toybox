@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8653672293947775312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bcb396e485d40147a979e283e0400ef, type: 3}
+  m_Name: Set Job String
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -348
+    y: 239
+    width: 80
+    height: 80
+  toSet: Wandering around
+--- !u!114 &-8201865015013882245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc506c5ec715d94aa20620d801edff2, type: 3}
+  m_Name: Set Random position
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -113
+    y: 236
+    width: 80
+    height: 80
+  position: {fileID: 281006963309210346}
+  maxRange: 30
+--- !u!114 &-8142958975244005722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9712a2a5f6860f479864fff8c7c5a81, type: 3}
+  m_Name: Wait Range
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 123
+    y: 238
+    width: 80
+    height: 80
+  timeToWaitRange: {x: 3, y: 7}
+  successOnFinish: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffe61478ed6e7b498c9b997879bf192, type: 3}
+  m_Name: DoNothing
+  m_EditorClassIdentifier: 
+  root: {fileID: 3192245941983045316}
+--- !u!114 &281006963309210346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9ac279248738d47a428df9434dc3eb, type: 3}
+  m_Name: Position
+  m_EditorClassIdentifier: 
+--- !u!114 &3192245941983045316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfc898845fd13e748b592e2bdf87632c, type: 3}
+  m_Name: Root Forever
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 6093272477503587339}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -61
+    y: -73
+    width: 80
+    height: 80
+--- !u!114 &6093272477503587339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: New Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -8653672293947775312}
+  - {fileID: 6669973043210416892}
+  - {fileID: -8201865015013882245}
+  - {fileID: 7146342386594140910}
+  - {fileID: -8142958975244005722}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -60
+    y: 80
+    width: 80
+    height: 80
+--- !u!114 &6669973043210416892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa992ebcffde25478a0a283fac9a0c7, type: 3}
+  m_Name: Set Movement to slow
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -226
+    y: 239
+    width: 80
+    height: 80
+  hurrySpeed: 0
+--- !u!114 &7146342386594140910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7667e0d3371274298406731a924bd4, type: 3}
+  m_Name: Goto position
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 10
+    y: 235
+    width: 80
+    height: 80
+  position: {fileID: 281006963309210346}

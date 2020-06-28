@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8196336840244176969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7667e0d3371274298406731a924bd4, type: 3}
+  m_Name: Goto Item
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 67
+    y: 187
+    width: 80
+    height: 80
+  position: {fileID: -6766633104213428704}
+--- !u!114 &-8110614220594082539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06152b60bcf0b34298e4da959f65a66, type: 3}
+  m_Name: Root repeat
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -364057575840123156}
+  - {fileID: -538602431601004693}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -53
+    y: -124
+    width: 80
+    height: 80
+  check: 0
+  checkEverySeconds: 0
+  child1OnFailure: 2
+  child2OnFailure: 2
+--- !u!114 &-7088966351649963492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb229ba062d8154f8430677de0a61ed, type: 3}
+  m_Name: Inventory Full?
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -187
+    y: 183
+    width: 80
+    height: 80
+  bufferWeight: 0
+  maxCapicityInPercent: 0
+  usePercent: 0
+--- !u!114 &-6766633104213428704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db3eefe5b96edd4abec0167f990ce53, type: 3}
+  m_Name: Next item
+  m_EditorClassIdentifier: 
+--- !u!114 &-3909437071778325299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4398a2e83ecf346bbb8f4ba07ec097, type: 3}
+  m_Name: Pickup item
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 164
+    y: 188
+    width: 80
+    height: 80
+  itemToPickUp: {fileID: -6766633104213428704}
+--- !u!114 &-538602431601004693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: Pickup Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 3290994780621949182}
+  - {fileID: -8196336840244176969}
+  - {fileID: -3909437071778325299}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 68
+    y: 31
+    width: 80
+    height: 80
+--- !u!114 &-364057575840123156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6387757119c110342b7243128602c940, type: 3}
+  m_Name: Invert
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -7088966351649963492}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -185
+    y: 28
+    width: 80
+    height: 80
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffe61478ed6e7b498c9b997879bf192, type: 3}
+  m_Name: PickupNearItems
+  m_EditorClassIdentifier: 
+  root: {fileID: -8110614220594082539}
+--- !u!114 &3290994780621949182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9273346597a47bb4abe7d1b25b17, type: 3}
+  m_Name: Set Item
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -32
+    y: 186
+    width: 80
+    height: 80
+  itemValue: {fileID: -6766633104213428704}
+  positionValue: {fileID: 0}
+  distanceToCheck: 5

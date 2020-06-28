@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6336115057695945619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: Reset Sub Tree
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 296
+    y: -102
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 87827ec836d61ce4da93b868f73a00b2, type: 2}
+  valuesToOverwrite:
+  - toOverwrite: {fileID: 8216977253813595848, guid: 87827ec836d61ce4da93b868f73a00b2,
+      type: 2}
+    newValue: {fileID: 0}
+--- !u!114 &-5435696733987802218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: work at collectionpoint
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 269
+    y: 227
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 0a0df852896e83d48aa266b0135347be, type: 2}
+  valuesToOverwrite: []
+--- !u!114 &-4193783688124926328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76fe29014eac9b845b0b741334f6a719, type: 3}
+  m_Name: Job Chooser
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 1321507340682394030}
+  - {fileID: -4176528949063239090}
+  - {fileID: -5435696733987802218}
+  - {fileID: 3914868767158024410}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 219
+    y: 57
+    width: 80
+    height: 80
+  jobs: 000000000100000002000000
+--- !u!114 &-4176528949063239090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: work at itempickup
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 175
+    y: 226
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 113fbd80b9810234c851c4610cec95e9, type: 2}
+  valuesToOverwrite: []
+--- !u!114 &-3010229289306279545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfc898845fd13e748b592e2bdf87632c, type: 3}
+  m_Name: Forever root
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 3487850824154257850}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 160
+    y: -406
+    width: 80
+    height: 80
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffe61478ed6e7b498c9b997879bf192, type: 3}
+  m_Name: MasterTree
+  m_EditorClassIdentifier: 
+  root: {fileID: -3010229289306279545}
+--- !u!114 &1321507340682394030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: Work at resoucefield
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 75
+    y: 226
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 87ab0f69084efab48974999adac2d645, type: 2}
+  valuesToOverwrite: []
+--- !u!114 &3487850824154257850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: New Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 7647589049845475650}
+  - {fileID: -6336115057695945619}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 161
+    y: -269
+    width: 80
+    height: 80
+--- !u!114 &3914868767158024410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: Do nothing Tree
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 365
+    y: 227
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 845c81dbc328bd9429caaa86ffe4d217, type: 2}
+  valuesToOverwrite: []
+--- !u!114 &6396159173728560074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbf510cc8b797446a2afdd9257875bd, type: 3}
+  m_Name: Job not changed
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -18
+    y: 60
+    width: 80
+    height: 80
+--- !u!114 &7647589049845475650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06152b60bcf0b34298e4da959f65a66, type: 3}
+  m_Name: Job Change Catcher
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 6396159173728560074}
+  - {fileID: -4193783688124926328}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 67
+    y: -112
+    width: 80
+    height: 80
+  check: 1
+  checkEverySeconds: 1
+  child1OnFailure: 2
+  child2OnFailure: 2

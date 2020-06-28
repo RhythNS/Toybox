@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9214004946808515412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ff581e8ce7a2d45a2ae2f70a82acb5, type: 3}
+  m_Name: Get all items
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -446
+    y: -216
+    width: 80
+    height: 80
+  collectionPointValue: {fileID: 8548125052308058826}
+  transferToBox: 0
+--- !u!114 &-8430372060390393838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb2ff783dd4b5145a81fa2c56de4438, type: 3}
+  m_Name: Town Collection
+  m_EditorClassIdentifier: 
+--- !u!114 &-7407368089729832619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7dacceffe628a4aa7c82278fcd6596, type: 3}
+  m_Name: Wait 3 seconds
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 116
+    y: -405
+    width: 80
+    height: 80
+  timeToWait: 3
+  successOnFinish: 1
+--- !u!114 &-7295707314752730720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bcb396e485d40147a979e283e0400ef, type: 3}
+  m_Name: Set Job String
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -704
+    y: -215
+    width: 80
+    height: 80
+  toSet: Transporting items
+--- !u!114 &-7072556944700329087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ff581e8ce7a2d45a2ae2f70a82acb5, type: 3}
+  m_Name: Put all items in town
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -190
+    y: -215
+    width: 80
+    height: 80
+  collectionPointValue: {fileID: -8430372060390393838}
+  transferToBox: 1
+--- !u!114 &-5926793926540705239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7667e0d3371274298406731a924bd4, type: 3}
+  m_Name: Goto collection
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -531
+    y: -216
+    width: 80
+    height: 80
+  position: {fileID: 8548125052308058826}
+--- !u!114 &-580794475967692388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d005b5b901613fd44820becea8e4a31a, type: 3}
+  m_Name: Root Check every couple a seconds
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -120269026815770308}
+  - {fileID: -7407368089729832619}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -100
+    y: -585
+    width: 80
+    height: 80
+--- !u!114 &-120269026815770308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: Collection Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -7295707314752730720}
+  - {fileID: 6994048355397200083}
+  - {fileID: -5926793926540705239}
+  - {fileID: -9214004946808515412}
+  - {fileID: 5714854283003334992}
+  - {fileID: 5511984647939575877}
+  - {fileID: -7072556944700329087}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -449
+    y: -394
+    width: 80
+    height: 80
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffe61478ed6e7b498c9b997879bf192, type: 3}
+  m_Name: TransferItems
+  m_EditorClassIdentifier: 
+  root: {fileID: -580794475967692388}
+--- !u!114 &5511984647939575877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7667e0d3371274298406731a924bd4, type: 3}
+  m_Name: Goto Town
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -274
+    y: -215
+    width: 80
+    height: 80
+  position: {fileID: -8430372060390393838}
+--- !u!114 &5714854283003334992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037e1ea45ead0d043b19927374e6318f, type: 3}
+  m_Name: Set Town collection
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -360
+    y: -216
+    width: 80
+    height: 80
+  collectionPoint: {fileID: -8430372060390393838}
+  connectedToCity: 0
+  checkFillAmount: 0
+  maxFillAmount: 0
+  minFillAmount: 0
+--- !u!114 &6994048355397200083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037e1ea45ead0d043b19927374e6318f, type: 3}
+  m_Name: Set ToEmpty Collection
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -617
+    y: -216
+    width: 80
+    height: 80
+  collectionPoint: {fileID: 8548125052308058826}
+  connectedToCity: 1
+  checkFillAmount: 1
+  maxFillAmount: 1
+  minFillAmount: 0.3
+--- !u!114 &8548125052308058826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb2ff783dd4b5145a81fa2c56de4438, type: 3}
+  m_Name: To empty Collection
+  m_EditorClassIdentifier: 

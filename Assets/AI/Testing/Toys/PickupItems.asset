@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8414449025517495058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bcb396e485d40147a979e283e0400ef, type: 3}
+  m_Name: Set Job String
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -532
+    y: -337
+    width: 80
+    height: 80
+  toSet: Picking up items
+--- !u!114 &-7133349368322217978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7667e0d3371274298406731a924bd4, type: 3}
+  m_Name: Goto Pickup position
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -181
+    y: -24
+    width: 80
+    height: 80
+  position: {fileID: -4985468604866282125}
+--- !u!114 &-5304368441120386666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db3eefe5b96edd4abec0167f990ce53, type: 3}
+  m_Name: Next Item
+  m_EditorClassIdentifier: 
+--- !u!114 &-4985468604866282125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9ac279248738d47a428df9434dc3eb, type: 3}
+  m_Name: Position To Pickup
+  m_EditorClassIdentifier: 
+--- !u!114 &-2793878978019837172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9273346597a47bb4abe7d1b25b17, type: 3}
+  m_Name: Are items around?
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -316
+    y: -173
+    width: 80
+    height: 80
+  itemValue: {fileID: -6766633104213428704, guid: 9d8cdafd5c15d694680b9faf62a5966d,
+    type: 2}
+  positionValue: {fileID: -4985468604866282125}
+  distanceToCheck: 5
+--- !u!114 &-1342078926379883692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: Root sequece
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -8414449025517495058}
+  - {fileID: 7121635871078151642}
+  - {fileID: 3862044340880782340}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -301
+    y: -509
+    width: 80
+    height: 80
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffe61478ed6e7b498c9b997879bf192, type: 3}
+  m_Name: PickupItems
+  m_EditorClassIdentifier: 
+  root: {fileID: -1342078926379883692}
+--- !u!114 &3862044340880782340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06152b60bcf0b34298e4da959f65a66, type: 3}
+  m_Name: Pick up items
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -2793878978019837172}
+  - {fileID: 6991344306973438080}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -204
+    y: -336
+    width: 80
+    height: 80
+  check: 0
+  checkEverySeconds: 0
+  child1OnFailure: 2
+  child2OnFailure: 0
+--- !u!114 &3942210419219202339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: Pickup items Sub
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -95
+    y: -23
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 9d8cdafd5c15d694680b9faf62a5966d, type: 2}
+  valuesToOverwrite: []
+--- !u!114 &4137354158653672047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: Put items into box sub
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -8
+    y: -25
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 210edb68bb750284e806ac94e01515f3, type: 2}
+  valuesToOverwrite: []
+--- !u!114 &6991344306973438080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: New Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -7133349368322217978}
+  - {fileID: 3942210419219202339}
+  - {fileID: 4137354158653672047}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -99
+    y: -171
+    width: 80
+    height: 80
+--- !u!114 &7121635871078151642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd79ff3aefa0eb74ab867834bf2675ba, type: 3}
+  m_Name: Set position
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -372
+    y: -337
+    width: 80
+    height: 80
+  location: {fileID: -4985468604866282125}

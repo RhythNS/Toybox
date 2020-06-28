@@ -1,0 +1,690 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6893632768121338231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb2ff783dd4b5145a81fa2c56de4438, type: 3}
+  m_Name: Collection Point
+  m_EditorClassIdentifier: 
+--- !u!114 &-5175735218731258185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782a89d5668270d44be019f5dbdc77b3, type: 3}
+  m_Name: Has ResourceField items?
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 22
+    y: 114
+    width: 80
+    height: 80
+  resourceField: {fileID: 8549616753207251177}
+--- !u!114 &-4610302038486555278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f482daaa7e0831544990164d2a2fad40, type: 3}
+  m_Name: Equip Tool
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -43
+    y: -39
+    width: 80
+    height: 80
+  toolTypeValue: {fileID: 5800486899484664533}
+--- !u!114 &-4361969440873138554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: New Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 5588259856819691309}
+  - {fileID: -1062257235410910911}
+  - {fileID: 1083546161615571032}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 366
+    y: 401
+    width: 80
+    height: 80
+--- !u!114 &-3668741342551093481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06152b60bcf0b34298e4da959f65a66, type: 3}
+  m_Name: Repeat
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -5175735218731258185}
+  - {fileID: 3988531292021317671}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 113
+    y: -36
+    width: 80
+    height: 80
+  check: 0
+  checkEverySeconds: 0
+  child1OnFailure: 2
+  child2OnFailure: 1
+--- !u!114 &-3600050942078944435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9273346597a47bb4abe7d1b25b17, type: 3}
+  m_Name: Are Items around?
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 262
+    y: 402
+    width: 80
+    height: 80
+  itemValue: {fileID: 4333500439959338199}
+  positionValue: {fileID: 0}
+  distanceToCheck: 5
+--- !u!114 &-2993718245688940980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d005b5b901613fd44820becea8e4a31a, type: 3}
+  m_Name: Tool check
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -1853585851020118013}
+  - {fileID: 6978424608395549608}
+  - {fileID: 4943937664015992067}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -179
+    y: -34
+    width: 80
+    height: 80
+--- !u!114 &-1853585851020118013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d97fdd4dc17e4149aabec46eef42ac6, type: 3}
+  m_Name: HasTool?
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -363
+    y: 113
+    width: 80
+    height: 80
+  resource: {fileID: 3525428408023929348}
+--- !u!114 &-1062257235410910911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: Sub Place Items into a box
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 357
+    y: 535
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 210edb68bb750284e806ac94e01515f3, type: 2}
+  valuesToOverwrite: []
+--- !u!114 &-951506015173051981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: Sub Gather Resource
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 130
+    y: 279
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 19d785801c0e3ca40bad83fda7640163, type: 2}
+  valuesToOverwrite:
+  - toOverwrite: {fileID: 3525332529913969193, guid: 19d785801c0e3ca40bad83fda7640163,
+      type: 2}
+    newValue: {fileID: 8857000305833709114}
+  - toOverwrite: {fileID: 4642551120204098671, guid: 19d785801c0e3ca40bad83fda7640163,
+      type: 2}
+    newValue: {fileID: 8549616753207251177}
+--- !u!114 &-602136621093645850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81dd60d065e9c3148b73b687b51e6104, type: 3}
+  m_Name: Unequip Tool
+  m_EditorClassIdentifier: 
+  toolType: 0
+--- !u!114 &-405100243262351191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d089cfc7a45864cba41fcea88fa71b, type: 3}
+  m_Name: Print tool not found
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -167
+    y: 427
+    width: 80
+    height: 80
+  eventType: 2
+  useEnum: 1
+  otherPrint: 
+--- !u!114 &-243653279474238317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: New Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -405100243262351191}
+  - {fileID: 3924850798681561050}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -111
+    y: 282
+    width: 80
+    height: 80
+--- !u!114 &-82849771469629948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd854f9c01e948a4ea2cf44708868c16, type: 3}
+  m_Name: Get Tool
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -245
+    y: 285
+    width: 80
+    height: 80
+  collectionPointValue: {fileID: -6893632768121338231}
+  interaction: 0
+  toolTypeValue: {fileID: 5800486899484664533}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffe61478ed6e7b498c9b997879bf192, type: 3}
+  m_Name: GatherPreferedResource
+  m_EditorClassIdentifier: 
+  root: {fileID: 8210458942476107246}
+--- !u!114 &358589625692875303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06152b60bcf0b34298e4da959f65a66, type: 3}
+  m_Name: Repeat Pickup Items
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -3600050942078944435}
+  - {fileID: -4361969440873138554}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 327
+    y: 280
+    width: 80
+    height: 80
+  check: 0
+  checkEverySeconds: 0
+  child1OnFailure: 2
+  child2OnFailure: 0
+--- !u!114 &1083546161615571032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7667e0d3371274298406731a924bd4, type: 3}
+  m_Name: Goto Resource
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 441
+    y: 535
+    width: 80
+    height: 80
+  position: {fileID: 8857000305833709114}
+--- !u!114 &1779246616584131012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bcb396e485d40147a979e283e0400ef, type: 3}
+  m_Name: Set Job String
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -414
+    y: -35
+    width: 80
+    height: 80
+  toSet: Gathering resources
+--- !u!114 &3044597142490247710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7667e0d3371274298406731a924bd4, type: 3}
+  m_Name: Goto Collection Point
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -333
+    y: 284
+    width: 80
+    height: 80
+  position: {fileID: -6893632768121338231}
+--- !u!114 &3525428408023929348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9ac279248738d47a428df9434dc3eb, type: 3}
+  m_Name: ResourceType
+  m_EditorClassIdentifier: 
+--- !u!114 &3924850798681561050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d7a642d5e587e40b4f3bce7abc38f8, type: 3}
+  m_Name: Reset Job
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -65
+    y: 428
+    width: 80
+    height: 80
+--- !u!114 &3988531292021317671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: Gather Resource
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 6588831078605212458}
+  - {fileID: -951506015173051981}
+  - {fileID: 8639064713520053935}
+  - {fileID: 358589625692875303}
+  boundsInEditor:
+    serializedVersion: 2
+    x: 215
+    y: 119
+    width: 80
+    height: 80
+--- !u!114 &4315251670612925608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecddb4e6ea3c3a443986d088e37fe70e, type: 3}
+  m_Name: Set AssignedResource
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -297
+    y: -34
+    width: 80
+    height: 80
+  resourceTypeValue: {fileID: 3525428408023929348}
+  resourceFieldValue: {fileID: 8549616753207251177}
+  toolTypeValue: {fileID: 5800486899484664533}
+--- !u!114 &4333500439959338199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db3eefe5b96edd4abec0167f990ce53, type: 3}
+  m_Name: NextItem
+  m_EditorClassIdentifier: 
+--- !u!114 &4915324450138139625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037e1ea45ead0d043b19927374e6318f, type: 3}
+  m_Name: Set Collection Point
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: -422
+    y: 285
+    width: 80
+    height: 80
+  collectionPoint: {fileID: -6893632768121338231}
+  connectedToCity: 0
+  checkFillAmount: 0
+  maxFillAmount: 0
+  minFillAmount: 0
+--- !u!114 &4943937664015992067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c39bfaa53937854cb1bc5cf9e3ca5b8, type: 3}
+  m_Name: Invert
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: -243653279474238317}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -138
+    y: 114
+    width: 80
+    height: 80
+--- !u!114 &5588259856819691309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600da718a367327438be6843a065f573, type: 3}
+  m_Name: Sub Pickup Items
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 274
+    y: 535
+    width: 80
+    height: 80
+  behaviourTree: {fileID: 11400000, guid: 9d8cdafd5c15d694680b9faf62a5966d, type: 2}
+  valuesToOverwrite: []
+--- !u!114 &5800486899484664533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9ac279248738d47a428df9434dc3eb, type: 3}
+  m_Name: ToolType
+  m_EditorClassIdentifier: 
+--- !u!114 &6588831078605212458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f482daaa7e0831544990164d2a2fad40, type: 3}
+  m_Name: Equip Tool
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 47
+    y: 279
+    width: 80
+    height: 80
+  toolTypeValue: {fileID: 5800486899484664533}
+--- !u!114 &6978424608395549608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: Get tool
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 4915324450138139625}
+  - {fileID: 3044597142490247710}
+  - {fileID: -82849771469629948}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -265
+    y: 113
+    width: 80
+    height: 80
+--- !u!114 &8210458942476107246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c43c0470316c743aaf58d5d6a731d9, type: 3}
+  m_Name: Root Sequence
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children:
+  - {fileID: 1779246616584131012}
+  - {fileID: 4315251670612925608}
+  - {fileID: -2993718245688940980}
+  - {fileID: -4610302038486555278}
+  - {fileID: -3668741342551093481}
+  boundsInEditor:
+    serializedVersion: 2
+    x: -95
+    y: -198
+    width: 80
+    height: 80
+--- !u!114 &8549616753207251177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438d227b0f38f814faa1206f4793b60a, type: 3}
+  m_Name: Resource Field
+  m_EditorClassIdentifier: 
+--- !u!114 &8639064713520053935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f482daaa7e0831544990164d2a2fad40, type: 3}
+  m_Name: Unequip Tool
+  m_EditorClassIdentifier: 
+  breakPointEnabled: 0
+  children: []
+  boundsInEditor:
+    serializedVersion: 2
+    x: 215
+    y: 279
+    width: 80
+    height: 80
+  toolTypeValue: {fileID: -602136621093645850}
+--- !u!114 &8857000305833709114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7011822945a8e45a6377bd937bd402, type: 3}
+  m_Name: Next Resource
+  m_EditorClassIdentifier: 
